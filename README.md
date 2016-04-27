@@ -19,7 +19,7 @@ npm i --save react-native-barcode-android
   ```gradle
   ...
   include ':ReactNativeBarcodescanner', ':app'
-  project(':ReactNativeBarcodescanner').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-barcodescanner/android')
+  project(':ReactNativeBarcodescanner').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-barcode-android/android')
   ```
 
 * In `android/app/build.gradle`
@@ -29,7 +29,7 @@ npm i --save react-native-barcode-android
   dependencies {
       ...
       compile project(':ReactNativeBarcodescanner')
-  }npm i --save react-native-barcode-android
+  }
   ```
 
 * register module (in MainActivity.java)
@@ -61,7 +61,7 @@ import React, {
   AppRegistry,
   Component,
 } from 'react-native';
-import BarcodeScanner from 'react-native-barcodescanner';
+import BarcodeScanner from 'react-native-barcode-android';
 
 class BarcodeScannerExampleApp extends Component {
   constructor(props) {
