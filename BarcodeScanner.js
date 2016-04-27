@@ -2,55 +2,55 @@
 
 var React = require('react-native');
 var {
-  PropTypes,
-  requireNativeComponent,
-  View,
+    PropTypes,
+    requireNativeComponent,
+    View,
 } = React;
 
 class BarcodeScannerView extends React.Component {
-  constructor() {
-    super();
-    this.onChange = this.onChange.bind(this);
-  }
-
-  onChange(event) {
-    if (!this.props.onBarCodeRead) {
-      return;
+    constructor() {
+        super();
+        this.onChange = this.onChange.bind(this);
     }
 
-    this.props.onBarCodeRead({
-      type: event.nativeEvent.type,
-      data: event.nativeEvent.data,
-    });
-  }
+    onChange(event) {
+        if (!this.props.onBarCodeRead) {
+            return;
+        }
 
-  render() {
-    return (
-      <RNBarcodeScannerView {...this.props} onChange={this.onChange} />
-    );
-  }
+        this.props.onBarCodeRead({
+            type: event.nativeEvent.type,
+            data: event.nativeEvent.data
+        });
+    }
+
+    render() {
+        return (
+            <RNBarcodeScannerView {...this.props} onChange={this.onChange}/>
+        );
+    }
 }
 
 BarcodeScannerView.propTypes = {
-  ...View.propTypes,
-  viewFinderBackgroundColor: PropTypes.string,
-  viewFinderBorderColor: PropTypes.string,
-  viewFinderBorderWidth: PropTypes.number,
-  viewFinderBorderLength: PropTypes.number,
-  viewFinderDrawLaser: PropTypes.bool,
-  viewFinderLaserColor: PropTypes.string,
-  torchMode: PropTypes.string,
-  cameraType: PropTypes.string,
-  onBarCodeRead: PropTypes.func,
-  rotation: PropTypes.number,
-  scaleX: PropTypes.number,
-  scaleY: PropTypes.number,
-  translateX: PropTypes.number,
-  translateY: PropTypes.number,
+    ...View.propTypes,
+    viewFinderBackgroundColor: PropTypes.string,
+    viewFinderBorderColor: PropTypes.string,
+    viewFinderBorderWidth: PropTypes.number,
+    viewFinderBorderLength: PropTypes.number,
+    viewFinderDrawLaser: PropTypes.bool,
+    viewFinderLaserColor: PropTypes.string,
+    torchMode: PropTypes.string,
+    cameraType: PropTypes.string,
+    onBarCodeRead: PropTypes.func,
+    rotation: PropTypes.number,
+    scaleX: PropTypes.number,
+    scaleY: PropTypes.number,
+    translateX: PropTypes.number,
+    translateY: PropTypes.number,
 };
 
 var RNBarcodeScannerView = requireNativeComponent('RNBarcodeScannerView', BarcodeScannerView, {
-  nativeOnly: {onChange: true}
+    nativeOnly: {onChange: true}
 });
 
 module.exports = BarcodeScannerView;

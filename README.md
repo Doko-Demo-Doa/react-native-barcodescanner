@@ -9,7 +9,7 @@ React native 0.19 changed the ReactProps class which led to problems with updati
 ### Installation
 
 ```bash
-npm i --save react-native-barcodescanner
+npm i --save react-native-barcode-android
 ```
 
 ### Add it to your android project
