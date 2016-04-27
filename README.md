@@ -1,4 +1,4 @@
-# react-native-barcodescanner
+# react-native-barcode-android
 
 A barcode scanner component for React Native Android. For iOS you can use https://github.com/lwansbrough/react-native-camera. The library depends on https://github.com/dm77/barcodescanner and https://github.com/zxing/zxing.
 
@@ -29,7 +29,7 @@ npm i --save react-native-barcode-android
   dependencies {
       ...
       compile project(':ReactNativeBarcodescanner')
-  }
+  }npm i --save react-native-barcode-android
   ```
 
 * register module (in MainActivity.java)
