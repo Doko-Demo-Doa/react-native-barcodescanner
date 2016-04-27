@@ -4,7 +4,7 @@ A barcode scanner component for React Native Android. For iOS you can use https:
 
 ### Breaking change
 
-React native 0.19 changed the ReactProps class which led to problems with updating native view properties (see https://github.com/facebook/react-native/issues/5649). These errors are corrected in react-native-barcodescanner version 1.0.0. Use version 1.0.0 and larger for react native >=0.19 and for earlier react native versions use version 0.1.4.
+React native 0.19 changed the ReactProps class which led to problems with updating native view properties (see https://github.com/facebook/react-native/issues/5649). These errors are corrected in react-native-barcode-android version 1.0.1. Use version 1.0.1 and larger for react native >=0.19 and for earlier react native versions use version 0.1.4.
 
 ### Installation
 
@@ -148,4 +148,4 @@ All color values are strings and must be specified as `#AARRGGBB` (alpha, red, g
 
 For a better overview of the viewfinder see
 
-![Portrait](https://raw.github.com/ideacreation/react-native-barcodescanner/master/screenshot.png).
+![Portrait](https://raw.githubusercontent.com/mygu/react-native-barcodescanner/master/screenshot.png).
