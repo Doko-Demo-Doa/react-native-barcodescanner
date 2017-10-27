@@ -30,7 +30,7 @@ public class ReactBarcodeScannerView extends ZXingScannerView implements ZXingSc
 
     @Override
     protected IViewFinder createViewFinderView(Context context) {
-        mViewFinderView = new AllowsLaserTogglingViewFinderView(context);
+        mViewFinderView = new ViewFinderView(context);
         return mViewFinderView;
     }
 
@@ -154,7 +154,8 @@ public class ReactBarcodeScannerView extends ZXingScannerView implements ZXingSc
             event
         );
 
-        startCamera(mCameraId);
-        setFlash(torchModeIsEnabled());
+        //startCamera(mCameraId);
+        resumeCameraPreview(this);
+        setFlash(false);
     }
 }

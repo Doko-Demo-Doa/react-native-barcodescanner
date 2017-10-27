@@ -108,14 +108,17 @@ public class ReactBarcodeScannerManager extends ViewGroupManager<ReactBarcodeSca
     @Override
     public void onHostResume() {
         if (mScannerViewVisible) {
-            mScannerView.startCamera(mScannerView.getCameraId());
+            //mScannerView.startCamera(mScannerView.getCameraId());
+            mScannerView.resumeCameraPreview(mScannerView);
             mScannerView.setFlash(mScannerView.torchModeIsEnabled());
         }
     }
 
     @Override
     public void onHostPause() {
-        mScannerView.stopCamera();
+        if (mScannerViewVisible) {
+            mScannerView.stopCamera();
+        }
     }
 
     @Override
