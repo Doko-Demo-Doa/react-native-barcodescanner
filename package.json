@@ -1,27 +1,32 @@
 {
-    "name": "react-native-barcode-android",
-    "version": "1.0.2",
-    "description": "A barcode scanner component for react native",
-    "license": "MIT",
-    "main": "BarcodeScanner.js",
-    "author": {
-        "name": "Mingyu Gu",
-        "email": "mingyugu0410@gmail.com",
-        "url": "https://www.lettoosoft.com"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/mygu/react-native-barcodescanner.git"
-    },
-    "keywords": [
-        "react",
-        "react-native",
-        "react-component",
-        "android",
-        "barcodescanner",
-        "barcode-android",
-        "barcode",
-        "scanner",
-        "barcodereader"
-    ]
+  "author": {
+    "email": "mingyugu0410@gmail.com",
+    "name": "Mingyu Gu",
+    "url": "https://www.acaziasoft.com"
+  },
+  "description": "A barcode scanner component for react native",
+  "keywords": [
+    "react",
+    "react-native",
+    "react-component",
+    "android",
+    "barcodescanner",
+    "barcode-android",
+    "barcode",
+    "scanner",
+    "barcodereader"
+  ],
+  "license": "MIT",
+  "main": "BarcodeScanner.js",
+  "name": "react-native-barcode-android",
+  "peerDependencies": {
+    "prop-types": "*",
+    "react": "*",
+    "react-native": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mygu/react-native-barcodescanner.git"
+  },
+  "version": "1.0.2"
 }
