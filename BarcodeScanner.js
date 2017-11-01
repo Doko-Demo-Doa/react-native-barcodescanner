@@ -1,12 +1,13 @@
 'use strict';
 
-import React, {
-  Component,
-  PropTypes,
+import { Component } from 'react';
+import {
   requireNativeComponent,
   StyleSheet,
   View,
 } from 'react-native';
+
+import PropTypes from 'prop-types';
 
 import Viewfinder from './Viewfinder';
 

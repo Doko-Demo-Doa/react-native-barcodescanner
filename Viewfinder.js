@@ -1,12 +1,12 @@
-import React, {
-  ActivityIndicatorIOS,
-  Component,
+import React, { Component } from 'react';
+
+import { ActivityIndicatorIOS,
   Platform,
   ProgressBarAndroid,
-  PropTypes,
   StyleSheet,
-  View,
-} from 'react-native';
+  View } from 'react-native';
+
+import PropTypes from 'prop-types';
 
 class Viewfinder extends Component {
   constructor() {
