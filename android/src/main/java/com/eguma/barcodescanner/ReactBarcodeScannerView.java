@@ -30,7 +30,7 @@ public class ReactBarcodeScannerView extends ZXingScannerView implements ZXingSc
 
     @Override
     protected IViewFinder createViewFinderView(Context context) {
-        mViewFinderView = new ViewFinderView(context);
+        mViewFinderView = new AllowsLaserTogglingViewFinderView(context);
         return mViewFinderView;
     }
 
